@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Mi Página Estática</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background: #f4f6f8;
+            color: #333;
+        }
+
+        header {
+            background: linear-gradient(135deg, #4f46e5, #6366f1);
+            color: white;
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            margin-top: 10px;
+        }
+
+        main {
+            max-width: 1000px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background: white;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.08);
+        }
+
+        .card h3 {
+            margin-top: 0;
+            color: #4f46e5;
+        }
+
+        footer {
+            background: #111827;
+            color: #9ca3af;
+            text-align: center;
+            padding: 20px;
+            margin-top: 60px;
+        }
+
+        footer span {
+            color: #e5e7eb;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Bienvenido a mi sitio</h1>
+    <p>Un ejemplo de HTML estático simple y moderno</p>
+</header>
+
+<main>
+    <section class="cards">
+        <div class="card">
+            <h3>HTML</h3>
+            <p>Estructura básica del contenido de la página.</p>
+        </div>
+        <div class="card">
+            <h3>CSS</h3>
+            <p>Estilos integrados para un diseño limpio y responsivo.</p>
+        </div>
+        <div class="card">
+            <h3>⚡ Estático</h3>
+            <p>No necesita servidor ni base de datos.</p>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <p>Hecho con <span>HTML + CSS</span> — 2025</p>
+</footer>
+
+</body>
+</html>
